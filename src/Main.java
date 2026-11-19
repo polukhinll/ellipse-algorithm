@@ -13,6 +13,7 @@ public class Main {
             frame.setLocationRelativeTo(null);
             frame.setVisible(true);
         });
+
     }
 }
 
@@ -35,6 +36,9 @@ class EllipsePanel extends JPanel {
                 canvas.setRGB(x, y, Color.WHITE.getRGB());
             }
         }
+        EllipseRasterizer.draw(
+                canvas, 400, 300, 160, 90, Color.RED
+        );
     }
 
     @Override
