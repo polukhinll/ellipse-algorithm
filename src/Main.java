@@ -36,9 +36,27 @@ class EllipsePanel extends JPanel {
                 canvas.setRGB(x, y, Color.WHITE.getRGB());
             }
         }
+
+        // Горизонтальный эллипс
         EllipseRasterizer.draw(
-                canvas, 400, 300, 160, 90, Color.RED
+                canvas, 210, 155, 155, 75, Color.RED
         );
+
+        // Вертикальный эллипс
+        EllipseRasterizer.draw(
+                canvas, 580, 170, 65, 125, Color.BLUE
+        );
+
+        // Окружность
+        EllipseRasterizer.draw(
+                canvas, 205, 425, 100, 100, Color.GREEN
+        );
+
+        // Узкий горизонтальный эллипс
+        EllipseRasterizer.draw(
+                canvas, 570, 425, 155, 45, Color.MAGENTA
+        );
+
     }
 
     @Override
